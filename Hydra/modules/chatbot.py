@@ -23,7 +23,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Hydea.modules.sql.chatbot_sql as sql
+import Hydra.modules.sql.chatbot_sql as sql
 from Hydra import NEKO_PTB
 from Hydra.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from Hydra.modules.helper_funcs.filters import CustomFilters
