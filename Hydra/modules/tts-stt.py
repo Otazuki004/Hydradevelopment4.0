@@ -70,7 +70,7 @@ async def _(event):
         return
     with open("hydra.ogg", "r"):
         await tbot.send_file(
-            event.chat_id, "Neko.mp3", voice_note=True, reply_to=reply_to_id
+            event.chat_id, "hydra.ogg", voice_note=True, reply_to=reply_to_id
         )
         os.remove("hydra.ogg")
 
