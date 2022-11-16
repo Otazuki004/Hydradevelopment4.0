@@ -60,7 +60,7 @@ async def all(event):
         usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
         if usrnum == 10:
             if mode == "text_on_cmd":
-                txt = f"{usrtxt}\n\n{msg}\n\nMeet Me Here🙈 @Besties_XD ✨🥀"
+                txt = f"{usrtxt}\n\n{msg}\n\nMeet Me HereðŸ™ˆ @Besties_XD âœ¨ðŸ¥€"
                 await tbot.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
@@ -83,9 +83,4 @@ async def cancel_spam(event):
         pass
     return await event.respond("Mentioning Are Stopped")
     
-__help__ = """
-*MENTION ALL:* 
-� @all Bot Mention All Members In Group (Bugs)
-"""
-
 __mod_name__ = "Mention All"
