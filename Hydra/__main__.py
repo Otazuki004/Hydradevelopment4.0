@@ -84,7 +84,7 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/ee4fc1bb7a1ef86b6fc41.jpg) `{PATCH_NAME}` 」────
+────「 [{}](https://te.legra.ph/file/ee4fc1bb7a1ef86b6fc41.jpg) Repo Edition 」────
 *ʜᴇʟʟᴏ! {},*
 *ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ `Last Update : 16/11/2022
-❍ Patch Name : `{PATCH_NAME}`
+❍ Patch Name : Repo Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
