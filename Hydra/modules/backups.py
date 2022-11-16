@@ -4,7 +4,7 @@ import time
 from io import BytesIO
 
 # from Hydra.modules.rules import get_rules
-import Htdra.modules.sql.rules_sql as rulessql
+import Hydra.modules.sql.rules_sql as rulessql
 from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
