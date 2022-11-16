@@ -21,11 +21,11 @@ class Language:
             return en_string
 
     def reload_strings(self) -> None:
-        for filename in os.listdir(r"./NekoRobot/langs"):
+        for filename in os.listdir(r"./Hydra/langs"):
             if filename.endswith(".yaml"):
                 language_name = filename[:-5]
                 self.languages[language_name] = yaml.safe_load(
-                    open(f"./NekoRobot/langs/{filename}", encoding="utf8")
+                    open(f"./Hydra/langs/{filename}", encoding="utf8")
                 )
 
     def get_languages(self) -> Dict:
