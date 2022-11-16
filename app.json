@@ -170,9 +170,9 @@
          "value": ""
       },
       "PATCH_NAME": {
-       "description": "Enter The Patch Update Name",
-       "required": true,
-       "value": "Repo Edition"
+       "description": "Enter The Patch Update Name (BETA)",
+       "required": false,
+       "value": "Repo edition"
       }
       
    }
