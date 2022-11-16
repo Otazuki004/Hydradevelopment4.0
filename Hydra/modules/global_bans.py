@@ -23,17 +23,17 @@ from Hydra import (
     WOLVES,
     sw,
 )
-from NekoRobot.modules.helper_funcs.chat_status import (
+from Hydra.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
+from Hydra.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.helper_funcs.misc import send_to_list
-from NekoRobot.modules.sql.users_sql import get_user_com_chats
+from Hydra.modules.helper_funcs.misc import send_to_list
+from Hydra.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
