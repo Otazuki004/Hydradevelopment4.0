@@ -1,6 +1,7 @@
 import html
 from typing import Optional
 
+from Hydda.modules.helper_funcs.alternate import send_message
 from telegram import Chat, ChatPermissions, Message, ParseMode, Update, User
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
@@ -10,7 +11,6 @@ import Hydra.modules.sql.blsticker_sql as sql
 from Hydra import LOGGER, NEKO_PTB
 from Hydra.modules.connection import connected
 from Hydra.modules.disable import DisableAbleCommandHandler
-from Hydda.modules.helper_funcs.alternate import send_message
 from Hydra.modules.helper_funcs.chat_status import user_admin, user_not_admin
 from Hydra.modules.helper_funcs.misc import split_message
 from Hydra.modules.helper_funcs.string_handling import extract_time

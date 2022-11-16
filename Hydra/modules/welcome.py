@@ -63,7 +63,7 @@ NEKO_VID = "https://te.legra.ph/file/83fc8d6676fce5d6a17c0.mp4"
 WAIFUS_IMG = "https://te.legra.ph/file/3ac43e8c8dab8e6bac001.jpg"
 
 
-# do not async #Otazuki_004 
+# do not async #Otazuki_004
 def send(update, message, keyboard, backup_message):
     chat = update.effective_chat
     cleanserv = sql.clean_service(chat.id)

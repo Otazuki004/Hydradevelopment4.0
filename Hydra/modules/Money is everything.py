@@ -8,5 +8,5 @@ PHOTO = "https://te.legra.ph/file/f395feea438508d9ccdb0.mp4"
 async def awake(event):
     Hydra = "REMEMBER ONE THING MONEY IS EVERYTHING"
     await tbot.send_file(event.chat_id, PHOTO, caption=Hydra)
-    
-    #Toon_Lisence
+
+    # Toon_Lisence

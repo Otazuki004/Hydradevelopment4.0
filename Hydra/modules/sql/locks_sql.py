@@ -1,4 +1,3 @@
-
 # New chat added -> setup permissions
 import threading
 

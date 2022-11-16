@@ -284,7 +284,8 @@ async def lego(event):
             os.remove(fname)
     except Exception:
         await event.reply("Unknown Error Please Ask Here @FutureCity004")
-        
+
+
 __help__ = """
 *Logo:* 
 • /logo <name> Wait 5 sec To get Your Logo 

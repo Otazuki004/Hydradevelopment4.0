@@ -10,10 +10,7 @@ from telegram.ext.filters import BaseFilter
 
 from Hydra import LOGGER
 from Hydra import NEKO_PTB as d
-from Hydra.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
-)
+from Hydra.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
 
 class NekoTelegramHandler:

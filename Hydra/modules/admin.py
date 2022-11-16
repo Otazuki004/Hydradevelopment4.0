@@ -25,10 +25,7 @@ from Hydra.modules.helper_funcs.chat_status import (
     user_can_changeinfo,
     user_can_pin,
 )
-from Hydra.modules.helper_funcs.extraction import (
-    extract_user,
-    extract_user_and_text,
-)
+from Hydra.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Hydra.modules.log_channel import loggable
 
 

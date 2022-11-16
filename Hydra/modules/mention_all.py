@@ -82,5 +82,6 @@ async def cancel_spam(event):
     except:
         pass
     return await event.respond("Mentioning Are Stopped")
-    
+
+
 __mod_name__ = "Mention All"

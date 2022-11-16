@@ -28,10 +28,7 @@ from Hydra.modules.helper_funcs.chat_status import (
     support_plus,
     user_admin,
 )
-from Hydra.modules.helper_funcs.extraction import (
-    extract_user,
-    extract_user_and_text,
-)
+from Hydra.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Hydra.modules.helper_funcs.misc import send_to_list
 from Hydra.modules.sql.users_sql import get_user_com_chats
 

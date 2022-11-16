@@ -9,10 +9,7 @@ from telegram.utils.helpers import mention_html
 import Hydra.modules.sql.blacklistusers_sql as sql
 from Hydra import DEMONS, DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
 from Hydra.modules.helper_funcs.chat_status import dev_plus
-from Hydra.modules.helper_funcs.extraction import (
-    extract_user,
-    extract_user_and_text,
-)
+from Hydra.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Hydra.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS

@@ -37,7 +37,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "Nice knowing you!",
     "Dear {first} Why You Left it's Hurt Group owner, If You Don't like This Group To join",
 ]
-#Hey_Do_like_it?
+# Hey_Do_like_it?
 
 
 class Welcome(BASE):

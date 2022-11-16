@@ -6,10 +6,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler
 
 from Hydra import NEKO_PTB
-from Hydra.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
-)
+from Hydra.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from Hydra.modules.sql import afk_sql as sql
 from Hydra.modules.users import get_user_id
 

@@ -11,10 +11,7 @@ import Hydra.modules.helper_funcs.string_store as fun
 import Hydra.modules.NekoFunBot_Strings as fun_strings
 from Hydra import NEKO_PTB, SUPPORT_CHAT
 from Hydra.events import register
-from Hydra.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
-)
+from Hydra.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from Hydra.modules.helper_funcs.alternate import typing_action
 from Hydra.modules.helper_funcs.chat_status import is_user_admin
 from Hydra.modules.helper_funcs.extraction import extract_user

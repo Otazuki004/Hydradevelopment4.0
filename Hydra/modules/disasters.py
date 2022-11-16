@@ -17,11 +17,7 @@ from Hydra import (
     TIGERS,
     WOLVES,
 )
-from Hydra.modules.helper_funcs.chat_status import (
-    dev_plus,
-    sudo_plus,
-    whitelist_plus,
-)
+from Hydra.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
 from Hydra.modules.helper_funcs.extraction import extract_user
 from Hydra.modules.log_channel import gloggable
 

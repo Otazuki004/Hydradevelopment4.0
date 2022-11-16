@@ -3,6 +3,8 @@ import os
 import time
 from io import BytesIO
 
+# from Hydra.modules.rules import get_rules
+import Htdra.modules.sql.rules_sql as rulessql
 from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
@@ -14,16 +16,15 @@ import Hydra.modules.sql.blacklist_sql as blacklistsql
 # import Hydra.modules.sql.welcome_sql as welcsql
 import Hydra.modules.sql.locks_sql as locksql
 import Hydra.modules.sql.notes_sql as sql
-
-# from Hydra.modules.rules import get_rules
-import Htdra.modules.sql.rules_sql as rulessql
 from Hydra import JOIN_LOGGER, LOGGER, NEKO_PTB, OWNER_ID
 from Hydra.__main__ import DATA_IMPORT
 from Hydra.modules.connection import connected
 from Hydra.modules.helper_funcs.alternate import typing_action
 from Hydra.modules.helper_funcs.chat_status import user_admin
 from Hydra.modules.sql import disable_sql as disabledsql
-#Toon_lisence
+
+# Toon_lisence
+
 
 @user_admin
 @typing_action
