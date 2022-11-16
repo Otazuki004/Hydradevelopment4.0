@@ -122,7 +122,7 @@ def chatbot(update: Update, context: CallbackContext):
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
         kukiurl = requests.get(
-            f"https://merissachatbot.tk/api/apikey=1985665341-MERISSArk4GRy9iD0/botname/owner/message={Message}"
+            f"http://api.brainshop.ai/get?bid=170552&key=XXF1O6wgkByaU0O5&uid=[uid]&msg=what%20is%20your%20name={Message}"
         )
 
         Kuki = json.loads(kukiurl.text)
