@@ -435,7 +435,7 @@ def __stats__():
 
 __mod_name__ = "Blacklists"
 
-from NekoRobot.modules.language import gs
+from Hydra.modules.language import gs
 
 
 def get_help(chat):
