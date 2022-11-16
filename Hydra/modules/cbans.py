@@ -406,7 +406,7 @@ def selfunban(context: CallbackContext, update: Update) -> Optional[str]:
     return f"<b>{html.escape(chat.title)}:</b>\n#UNBANNED\n<b>User:</b> {mention_html(member.user.id, member.user.first_name)}"
 
 
-from NekoRobot.modules.language import gs
+from Hydra.modules.language import gs
 
 
 def get_help(chat):
