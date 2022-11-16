@@ -24,8 +24,8 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-    from NekoRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin
-    from NekoRobot.modules.sql import disable_sql as sql
+    from Hydra.modules.helper_funcs.chat_status import is_user_admin, user_admin
+    from Hydra.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
