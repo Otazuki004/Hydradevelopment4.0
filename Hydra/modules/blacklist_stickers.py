@@ -1,7 +1,7 @@
 import html
 from typing import Optional
 
-from Hydda.modules.helper_funcs.alternate import send_message
+from Hydra.modules.helper_funcs.alternate import send_message
 from telegram import Chat, ChatPermissions, Message, ParseMode, Update, User
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
