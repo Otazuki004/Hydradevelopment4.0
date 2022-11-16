@@ -51,7 +51,7 @@ async def _(event):
     lan = lan.strip()
     try:
         tts = gTTS(text, tld="com", lang=lan)
-        tts.save("hydra.ogg")
+        tts.save("hydra.oga")
     except AssertionError:
         await event.reply(
             "The text is empty.\n"
@@ -68,11 +68,11 @@ async def _(event):
     except gTTSError:
         await event.reply("Error in Google Text-to-Speech API request !")
         return
-    with open("hydra.ogg", "r"):
+    with open("hydra.oga", "r"):
         await tbot.send_file(
-            event.chat_id, "hydra.ogg", voice_note=True, reply_to=reply_to_id
+            event.chat_id, "hydra.oga", voice_note=True, reply_to=reply_to_id
         )
-        os.remove("hydra.ogg")
+        os.remove("hydra.oga")
 
 
 # ------ MODULE IS UNDER TESTING ------#
