@@ -1,4 +1,3 @@
-
 import contextlib
 import html
 import importlib
@@ -47,7 +46,6 @@ from Hydra import (
     pgram,
     tbot,
     updater,
-    PATCH_NAME,
 )
 
 # needed to dynamically load modules
