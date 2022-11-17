@@ -91,9 +91,6 @@ PM_START_TEXT = """
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ `Last Update : 16/11/2022
-❍ Patch Name : Repo Edition
-➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
 
