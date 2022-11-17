@@ -126,7 +126,7 @@ def chatbot(update: Update, context: CallbackContext):
         )
 
         Kuki = json.loads(kukiurl.text)
-        kuki = Kuki["reply"]
+        kuki = Kuki["cnt"]
         sleep(0.3)
         message.reply_text(kuki, timeout=60)
 
