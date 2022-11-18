@@ -45,7 +45,7 @@ PHOTO = "https://te.legra.ph/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 
 async def awake(event):
-    NEKO = f= Here is Your link https://te.legra.ph{media_urls[0]}"
+    NEKO = f"Here is Your link https://te.legra.ph{media_urls[0]}"
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO)
 
         elif input_str == "gt":
