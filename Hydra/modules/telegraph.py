@@ -41,7 +41,18 @@ async def telegrap(event):
             else:
                 datetime.now()
                 os.remove(downloaded_file_name)
-     await client.send_message(event.chat.id,"Here is link https://telegra.ph/{media_urls[0]]"),{media_urla[0]} 
+                await tbot.send_message(
+                    event.chat_id,
+                    "Your telegraph is complete uploaded!",
+                    buttons=[
+                        [
+                            types.KeyboardButtonUrl(
+                                "➡ View Telegraph",
+                                f"https://te.legra.ph{media_urls[0]}",
+                            )
+                        ]
+                    ],
+                )
 
         elif input_str == "gt":
             user_object = await tbot.get_entity(reply_msg.sender_id)
