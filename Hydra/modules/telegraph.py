@@ -40,19 +40,13 @@ async def telegrap(event):
                 os.remove(downloaded_file_name)
             else:
                 datetime.now()
-                os.remove(downloaded_file_name)
-                await tbot.send_message(
-                    event.chat_id,
-                    "Your telegraph is complete uploaded!",
-                    buttons=[
-                        [
-                            types.KeyboardButtonUrl(
-                                "➡ View Telegraph",
-                                f"https://te.legra.ph{media_urls[0]}",
-                            )
-                        ]
-                    ],
-                )
+                os.remove(downloaded_file_name),
+PHOTO = "https://te.legra.ph/file/ee4fc1bb7a1ef86b6fc41.jpg"
+
+
+async def awake(event):
+    NEKO = f= Here is Your link https://te.legra.ph{media_urls[0]}"
+    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO)
 
         elif input_str == "gt":
             user_object = await tbot.get_entity(reply_msg.sender_id)
