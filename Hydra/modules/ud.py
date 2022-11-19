@@ -13,7 +13,7 @@ def ud(update: Update, context: CallbackContext):
         f"https://api.urbandictionary.com/v0/define?term={text}",
     ).json()
     try:
-        reply_text = f'*{text}*\n\n{results["list"][0]["definition"]}\n\n_{results["list"][0]["example"]}_'
+        reply_text = f'*{text}*\n\n{results["list"][0]["definition"]}\n\n_{results["list"][0]["example"]}_[Google It](https://www.google.com/search?q=define{text}'
     except:
         reply_text = f"No results found > {text} <."
     message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
