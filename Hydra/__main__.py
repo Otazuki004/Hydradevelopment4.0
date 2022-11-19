@@ -93,6 +93,9 @@ PM_START_TEXT = """
 ❍ Last Update : 16:11:22
 ❍ Patch Name : Repo Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ Next Patch : 4:12:2022
+❍ Next Patch Name : Music Edition
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
 
@@ -745,7 +748,7 @@ PHOTO = "https://graph.org/file/ee4fc1bb7a1ef86b6fc41.jpg"
 START_HYDRA = f"""
 ────「 Hydra Repo Edition 」────
 ʜᴇʟʟᴏ Users!
-ᕼʏᴅʀᴀ 𝗥ᴇᴘᴏ 𝗘ᴅɪᴛɪᴏɴ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
+ᕼʏᴅʀᴀ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ 𝗣ʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ : {pyrover}
 ❍ 𝗧ᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : {tlhver}
