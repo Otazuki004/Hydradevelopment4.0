@@ -32,7 +32,6 @@ from telethon import __version__ as tlhver
 
 import Hydra.modules.sql.users_sql as sql
 from Hydra import (
-    BOT_NAME,
     BOT_USERNAME,
     DONATION_LINK,
     HELP_IMG,
