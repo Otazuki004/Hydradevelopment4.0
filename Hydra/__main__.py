@@ -107,7 +107,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/WESUPPORT004"
+            text="🚑 Support", url=f"https://telegram.dog/FutureCity004"
         ),
         InlineKeyboardButton(text="📢 Updates", url="https://telegram.dog/Updates004"),
     ],
@@ -267,7 +267,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/WESUPPORT004",
+                            url=f"https://telegram.dog/FutureCity004",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
@@ -347,7 +347,7 @@ def help_button(update: Update, context: CallbackContext) -> None:
                                 text="[► Back ◄]", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="[► Support ◄]", url=f"https://t.me/WESUPPORT004"
+                                text="[► Support ◄]", url=f"https://t.me/FutureCity004"
                             ),
                         ]
                     ]
@@ -640,7 +640,7 @@ def donate(update: Update, context: CallbackContext) -> None:
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
-                                url=f"https://telegram.dog/WESUPPORT004",
+                                url=f"https://telegram.dog/FutureCity004",
                             ),
                         ]
                     ]
@@ -741,7 +741,7 @@ except BaseException:
 PHOTO = "https://graph.org/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 START_HYDRA = f"""
-────「 Hydra 」────
+────「 Hydra Repo Edition 」────
 ʜᴇʟʟᴏ! Users!
 ᕼʏᴅʀᴀ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -753,7 +753,7 @@ START_HYDRA = f"""
 
 START_BUTTON = [
     [
-        Button.url("Help", "https://t.me/hydra_50_bot?start=help"),
+        Button.url("Help", "https://t.me/hydra_100_bot?start=help"),
     ]
 ]
 if __name__ == "__main__":
