@@ -742,8 +742,8 @@ PHOTO = "https://graph.org/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 START_HYDRA = f"""
 ────「 Hydra Repo Edition 」────
-ʜᴇʟʟᴏ! Users!
-ᕼʏᴅʀᴀ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
+ʜᴇʟʟᴏ Users!
+ᕼʏᴅʀᴀ 𝗥ᴇᴘᴏ 𝗘ᴅɪᴛɪᴏɴ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ 𝗣ʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ : {pyrover}
 ❍ 𝗧ᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : {tlhver}
