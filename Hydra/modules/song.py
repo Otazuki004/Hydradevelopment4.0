@@ -1,61 +1,124 @@
+import asyncio
+import requests
+import wget
+import yt_dlp
+import config
 import os
 
+from youtube_search import YoutubeSearch
+from yt_dlp import YoutubeDL
+
 from pyrogram import filters
-from pytube import YouTube
-from youtubesearchpython import VideosSearch
+from pyrogram.types import *
 
-from Hydra import LOGGER
-from Hydra import pgram as app
-from Hydra.Shelper import get_arg, ignore_blacklisted_users
-from Hydra.sql.chat_sql import add_chat_to_db
+from Hydra import bot
 
 
-def yt_search(song):
-    videosSearch = VideosSearch(song, limit=1)
-    result = videosSearch.result()
-    if not result:
-        return False
-    else:
-        video_id = result["result"][0]["id"]
-        url = f"https://youtu.be/{video_id}"
-        return url
-
-
-@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("song"))
-async def song(client, message):
-    chat_id = message.chat.id
-    user_id = message.from_user["id"]
-    add_chat_to_db(str(chat_id))
-    args = get_arg(message) + " " + "song"
-    if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
-        return ""
-    status = await message.reply(
-        "🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/67f41ae52a85dfc0551ae.mp4)"
-    )
-    video_link = yt_search(args)
-    if not video_link:
-        await status.edit(
-            "✖️ 𝐅𝐨𝐮𝐧𝐝 𝐍𝐨𝐭𝐡𝐢𝐧𝐠. 𝐒𝐨𝐫𝐫𝐲.\n\n𝐓𝐫𝐲 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐊𝐞𝐲𝐰𝐨𝐫𝐤 𝐎𝐫 𝐌𝐚𝐲𝐛𝐞 𝐒𝐩𝐞𝐥𝐥 𝐈𝐭 𝐏𝐫𝐨𝐩𝐞𝐫𝐥𝐲.\n\nEg.`/song Faded`"
-        )
-        return ""
-    yt = YouTube(video_link)
-    audio = yt.streams.filter(only_audio=True).first()
+@bot.on_message(filters.command("video",config.COMMANDS))
+async def vsong(client, message):
+    ydl_opts = {
+        "format": "best",
+        "keepvideo": True,
+        "prefer_ffmpeg": False,
+        "geo_bypass": True,
+        "outtmpl": "%(title)s.%(ext)s",
+        "quite": True,
+    }
+    query = " ".join(message.command[1:])
     try:
-        download = audio.download(filename=f"{str(user_id)}")
-    except Exception as ex:
-        await status.edit("Failed to download song 😶")
-        LOGGER.error(ex)
-        return ""
-    os.rename(download, f"{str(user_id)}.mp3")
-    await app.send_chat_action(message.chat.id, "upload_audio")
-    await app.send_audio(
-        chat_id=message.chat.id,
-        audio=f"{str(user_id)}.mp3",
-        duration=int(yt.length),
-        title=str(yt.title),
-        performer=str(yt.author),
-        reply_to_message_id=message.message_id,
-    )
-    await status.delete()
-    os.remove(f"{str(user_id)}.mp3")
+        results = YoutubeSearch(query, max_results=1).to_dict()
+        link = f"https://youtube.com{results[0]['url_suffix']}"
+        title = results[0]["title"][:40]
+        thumbnail = results[0]["thumbnails"][0]
+        thumb_name = f"{title}.jpg"
+        thumb = requests.get(thumbnail, allow_redirects=True)
+        open(thumb_name, "wb").write(thumb.content)
+        results[0]["duration"]
+        results[0]["url_suffix"]
+        results[0]["views"]
+        message.from_user.mention
+    except Exception as e:
+        print(e)
+    try:
+        msg = await message.reply("**Video Process.**")
+        with YoutubeDL(ydl_opts) as ytdl:
+            ytdl_data = ytdl.extract_info(link, download=True)
+            file_name = ytdl.prepare_filename(ytdl_data)
+    except Exception as e:
+        return await msg.edit(f"🚫 **Error:** {e}")
+    preview = wget.download(thumbnail)
+    await msg.edit("**Process Complete.\n Now Uploading.**")
+    title = ytdl_data["title"]
+    await message.reply_video(file_name,
+        duration=int(ytdl_data["duration"]),
+        thumb=preview,
+        caption=f"{title}\n**Request by {message.from_user.mention}**")
+     
+    await msg.delete()
+    try:
+        os.remove(file_name)
+    except Exception as e:
+        print(e)                                  
+
+flex = {}
+chat_watcher_group = 3
+
+                       
+ydl_opts = {
+    "format": "best",
+    "keepvideo": True,
+    "prefer_ffmpeg": False,
+    "geo_bypass": True,
+    "outtmpl": "%(title)s.%(ext)s",
+    "quite": True,
+}        
+
+@bot.on_message(filters.command("song", config.COMMANDS))
+def download_song(_, message):
+    query = " ".join(message.command[1:])  
+    print(query)
+    m = message.reply("**🔄 Searching.... **")
+    ydl_ops = {"format": "bestaudio[ext=m4a]"}
+    try:
+        results = YoutubeSearch(query, max_results=1).to_dict()
+        link = f"https://youtube.com{results[0]['url_suffix']}"
+        title = results[0]["title"][:40]
+        thumbnail = results[0]["thumbnails"][0]
+        thumb_name = f"{title}.jpg"
+        thumb = requests.get(thumbnail, allow_redirects=True)
+        open(thumb_name, "wb").write(thumb.content)
+        duration = results[0]["duration"]
+
+    except Exception as e:
+        m.edit("**⚠️ No results were found. Make sure you typed the information correctly**")
+        print(str(e))
+        return
+    m.edit("**📥 Downloading ..**")
+    try:
+        with yt_dlp.YoutubeDL(ydl_ops) as ydl:
+            info_dict = ydl.extract_info(link, download=False)
+            audio_file = ydl.prepare_filename(info_dict)
+            ydl.process_info(info_dict)
+        secmul, dur, dur_arr = 1, 0, duration.split(":")
+        for i in range(len(dur_arr) - 1, -1, -1):
+            dur += int(float(dur_arr[i])) * secmul
+            secmul *= 60
+        m.edit("**📤 Uploading ..**")
+
+        message.reply_audio(
+            audio_file,
+            thumb=thumb_name,
+            title=title,
+            caption=f"{title}\n**Request by {message.from_user.mention}**",
+            duration=dur
+        )
+        m.delete()
+    except Exception as e:
+        m.edit(" - An error !!")
+        print(e)
+
+    try:
+        os.remove(audio_file)
+        os.remove(thumb_name)
+    except Exception as e:
+        print(e)
