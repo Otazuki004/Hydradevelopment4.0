@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText
 
-from Hydra.sql import BASE, SESSION
+from Hydra.modules.sql import BASE, SESSION
 
 
 class Chats(BASE):
