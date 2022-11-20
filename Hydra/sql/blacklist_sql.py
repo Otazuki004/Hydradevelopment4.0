@@ -1,6 +1,7 @@
 from pyrogram.types import Message
 from sqlalchemy import Column, String, UnicodeText
-from . import SESSION, BASE
+
+from . import BASE, SESSION
 
 
 class BlackList(BASE):
