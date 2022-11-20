@@ -1,9 +1,8 @@
 import threading
 
-from pyrogram.filters import chat
+from sqlalchemy import Column, String, UnicodeText
 
 from Hydra.sql import BASE, SESSION
-from sqlalchemy import Column, String, UnicodeText
 
 
 class Chats(BASE):
