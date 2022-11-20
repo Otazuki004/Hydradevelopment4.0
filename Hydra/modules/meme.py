@@ -22,17 +22,17 @@ GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr
 @register(pattern="^/truth ?(.*)")
 async def _(td):
     try:
-        resp = requests.get("https://api.truthordarebot.xyz").json()
+        resp = requests.get("https://api.truthordarebot.xyz/v1/truth").json()
         results = f"{resp['truth']}"
         return await td.reply(results)
     except Exception:
-        await td.reply(f"Error Report @FutureCity004")
+        await td.reply(f"Unknown Error Please contact @FutureCity004")
 
 
 @register(pattern="^/dare ?(.*)")
 async def _(dr):
     try:
-        resp = requests.get("https://api.truthordarebot.xyz").json()
+        resp = requests.get("https://api.truthordarebot.xyz/v1/dare").json()
         results = f"{resp['dare']}"
         return await dr.reply(results)
     except Exception:
