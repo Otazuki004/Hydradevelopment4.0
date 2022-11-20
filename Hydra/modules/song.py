@@ -2,7 +2,7 @@ import os
 
 from pyrogram import filters
 from pytube import YouTube
-from Shelper.Shelper import get_arg, ignore_blacklisted_users
+from Hydra.Shelper import get_arg, ignore_blacklisted_users
 from youtubesearchpython import VideosSearch
 
 from Hydra import LOGGER, app
