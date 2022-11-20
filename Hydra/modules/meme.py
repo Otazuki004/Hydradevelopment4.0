@@ -22,7 +22,7 @@ GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr
 @register(pattern="^/truth ?(.*)")
 async def _(td):
     try:
-        resp = requests.get("https://api.safone.tech/truth").json()
+        resp = requests.get("https://api.truthordarebot.xyz").json()
         results = f"{resp['truth']}"
         return await td.reply(results)
     except Exception:
@@ -32,7 +32,7 @@ async def _(td):
 @register(pattern="^/dare ?(.*)")
 async def _(dr):
     try:
-        resp = requests.get("https://api.safone.tech/dare").json()
+        resp = requests.get("https://api.truthordarebot.xyz").json()
         results = f"{resp['dare']}"
         return await dr.reply(results)
     except Exception:
