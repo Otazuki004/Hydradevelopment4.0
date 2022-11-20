@@ -1,5 +1,6 @@
-from pyrogram import Client, filters
+from pyrogram import Client
 from pyrogram.types import Message
+
 from Hydra.sql.blacklist_sql import check_is_black_list
 
 
