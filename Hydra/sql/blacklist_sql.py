@@ -1,8 +1,8 @@
 from pyrogram.types import Message
 from sqlalchemy import Column, String, UnicodeText
 
-
 from Hydra.sql import BASE, SESSION
+
 
 class BlackList(BASE):
     __tablename__ = "blacklist"
