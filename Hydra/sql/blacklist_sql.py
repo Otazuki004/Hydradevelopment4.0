@@ -3,6 +3,7 @@ from sqlalchemy import Column, String, UnicodeText
 
 from Hydra.modules.sql import BASE, SESSION
 
+
 class BlackList(BASE):
     __tablename__ = "blacklist"
     chat_id = Column(String(14), primary_key=True)
