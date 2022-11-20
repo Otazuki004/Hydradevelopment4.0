@@ -1,20 +1,17 @@
-import asyncio
+import os
+
+import config
 import requests
 import wget
 import yt_dlp
-import config
-import os
-
+from pyrogram import filters
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
-
-from pyrogram import filters
-from pyrogram.types import *
 
 from Hydra import bot
 
 
-@bot.on_message(filters.command("video",config.COMMANDS))
+@bot.on_message(filters.command("video", config.COMMANDS))
 async def vsong(client, message):
     ydl_opts = {
         "format": "best",
@@ -49,21 +46,24 @@ async def vsong(client, message):
     preview = wget.download(thumbnail)
     await msg.edit("**Process Complete.\n Now Uploading.**")
     title = ytdl_data["title"]
-    await message.reply_video(file_name,
+    await message.reply_video(
+        file_name,
         duration=int(ytdl_data["duration"]),
         thumb=preview,
-        caption=f"{title}\n**Request by {message.from_user.mention}**")
-     
+        caption=f"{title}\n**Request by {message.from_user.mention}**",
+    )
+
     await msg.delete()
     try:
         os.remove(file_name)
     except Exception as e:
-        print(e)                                  
+        print(e)
+
 
 flex = {}
 chat_watcher_group = 3
 
-                       
+
 ydl_opts = {
     "format": "best",
     "keepvideo": True,
@@ -71,11 +71,12 @@ ydl_opts = {
     "geo_bypass": True,
     "outtmpl": "%(title)s.%(ext)s",
     "quite": True,
-}        
+}
+
 
 @bot.on_message(filters.command("song", config.COMMANDS))
 def download_song(_, message):
-    query = " ".join(message.command[1:])  
+    query = " ".join(message.command[1:])
     print(query)
     m = message.reply("**🔄 Searching.... **")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
@@ -90,7 +91,9 @@ def download_song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("**⚠️ No results were found. Make sure you typed the information correctly**")
+        m.edit(
+            "**⚠️ No results were found. Make sure you typed the information correctly**"
+        )
         print(str(e))
         return
     m.edit("**📥 Downloading ..**")
@@ -110,7 +113,7 @@ def download_song(_, message):
             thumb=thumb_name,
             title=title,
             caption=f"{title}\n**Request by {message.from_user.mention}**",
-            duration=dur
+            duration=dur,
         )
         m.delete()
     except Exception as e:
