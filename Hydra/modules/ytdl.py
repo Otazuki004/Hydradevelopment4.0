@@ -49,7 +49,7 @@ async def vsong(client, message):
         file_name,
         duration=int(ytdl_data["duration"]),
         thumb=preview,
-        caption=f"{title}\n**Request by {message.from_user.mention}**",
+        caption=f"{title}\nRequest by {message.from_user.mention}",
     )
 
     await msg.delete()
@@ -77,7 +77,7 @@ ydl_opts = {
 def download_song(_, message):
     query = " ".join(message.command[1:])
     print(query)
-    m = message.reply("**🔄 Searching.... **")
+    m = message.reply("🔄 Searching....")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -91,11 +91,11 @@ def download_song(_, message):
 
     except Exception as e:
         m.edit(
-            "**⚠️ No results were found. Make sure you typed the information correctly**"
+            "⚠️ No results were found. Make sure you typed the information correctly"
         )
         print(str(e))
         return
-    m.edit("**📥 Downloading ..**")
+    m.edit("📥 Downloading ..")
     try:
         with yt_dlp.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -105,13 +105,13 @@ def download_song(_, message):
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
-        m.edit("**📤 Uploading ..**")
+        m.edit("📤 Uploading ..")
 
         message.reply_audio(
             audio_file,
             thumb=thumb_name,
             title=title,
-            caption=f"{title}\n**Request by {message.from_user.mention}**",
+            caption=f"{title}\nRequest by {message.from_user.mention}",
             duration=dur,
         )
         m.delete()
