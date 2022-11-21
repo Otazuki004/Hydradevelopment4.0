@@ -7,7 +7,7 @@ from pyrogram import filters
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 
-from Hydra import bot
+from Hydra import pgram as bot
 
 
 @bot.on_message(filters.command("video", config.COMMANDS))
