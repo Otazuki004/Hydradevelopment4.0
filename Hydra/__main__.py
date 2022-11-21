@@ -90,11 +90,11 @@ PM_START_TEXT = """
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Last Update : 16:11:22
-❍ Patch Name : Repo Edition
+❍ Last Update : 21:11:22
+❍ Patch Name : Music Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Next Patch : 4:12:2022
-❍ Next Patch Name : Music Edition
+❍ Next Patch : 10:12:2022
+❍ Next Patch Name : Images Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
@@ -746,7 +746,7 @@ except BaseException:
 PHOTO = "https://graph.org/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 START_HYDRA = f"""
-────「 Hydra Repo Edition 」────
+────「 Hydra Music Edition 」────
 ʜᴇʟʟᴏ Users!
 ᕼʏᴅʀᴀ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
