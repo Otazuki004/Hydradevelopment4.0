@@ -10,7 +10,7 @@ from yt_dlp import YoutubeDL
 from Hydra import pgram as bot
 
 
-@bot.on_message(filters.command("video", config.COMMANDS))
+@bot.on_message(filters.command("video"))
 async def vsong(client, message):
     ydl_opts = {
         "format": "best",
@@ -73,7 +73,7 @@ ydl_opts = {
 }
 
 
-@bot.on_message(filters.command("song", config.COMMANDS))
+@bot.on_message(filters.command("song"))
 def download_song(_, message):
     query = " ".join(message.command[1:])
     print(query)
