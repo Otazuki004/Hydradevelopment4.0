@@ -1,6 +1,5 @@
 import os
 
-import config
 import requests
 import wget
 import yt_dlp
