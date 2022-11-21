@@ -124,3 +124,10 @@ def download_song(_, message):
         os.remove(thumb_name)
     except Exception as e:
         print(e)
+__help__ = """
+/song {name}, bot send You asked Song in That chat!
+/video {name}, bot send You asked Yt video In That chat!
+"""
+
+
+__mod_name__ = "SONG + VIDEO"
