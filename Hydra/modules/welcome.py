@@ -22,7 +22,7 @@ from telegram.ext import (
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
 import Hydra.modules.sql.welcome_sql as sql
-from Hydra import DEMONS, DEV_USERS, DRAGONS, LOGGER, NEKO_PTB, OWNER_ID, TIGERS, sw
+from Hydra import DEMONS, DEV_USERS, DRAGONS, LOGGER, NEKO_PTB, OWNER_ID, TIGERS, WOLVES, sw
 from Hydra.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
 from Hydra.modules.helper_funcs.misc import build_keyboard, revert_buttons
 from Hydra.modules.helper_funcs.msg_types import get_welcome_type
