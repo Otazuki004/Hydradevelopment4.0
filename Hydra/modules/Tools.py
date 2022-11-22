@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from search_engine_parser import GoogleSearch
 
-from Hydra import telethn as tbot
+from Hydra import tbot as tbot
 from Hydra.events import register
 
 opener = urllib.request.build_opener()
