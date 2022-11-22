@@ -6,7 +6,7 @@ import os
 
 def get_user_list(config, key):
 
-    with open(f"{os.getcwd()}/NekoRobot/{config}", "r") as json_file:
+    with open(f"{os.getcwd()}/Hydra/{config}", "r") as json_file:
 
         return json.load(json_file)[key]
 
@@ -44,7 +44,7 @@ class Config(object):
 
     # RECOMMENDED
 
-    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "mongodb+srv://Otazuki_004:<password>@hydra.od82ic1.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
 
     DB_URL = ""
 
@@ -173,7 +173,7 @@ class Config(object):
 
     # RECOMMENDED
 
-    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "mongodb+srv://Otazuki_004:<password>@hydra.od82ic1.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
 
     DB_URL = ""
 
