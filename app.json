@@ -42,7 +42,7 @@
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
-         "value": "sqldbtype://username:pw@hostname:port/db_name"
+         "value": "mongodb+srv://Otazuki_004:<password>@hydra.od82ic1.mongodb.net/?retryWrites=true&w=majority"
       },    
       "BOT_NAME": {
          "description": "Your Bot Name.",
@@ -158,7 +158,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it",
          "required": false,
-         "value": "t.me/Its_IZ_PRINCE_xD"
+         "value": "t.me/FutureCity004"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -172,7 +172,7 @@
       "PATCH_NAME": {
        "description": "Enter The Patch Update Name (BETA)",
        "required": false,
-       "value": "Repo edition"
+       "value": "Images edition"
       }
       
    }
