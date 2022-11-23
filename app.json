@@ -37,7 +37,7 @@
        "STRING_SESSION": {
          "description": "Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]",
          "required": true,
-         "value": "BQChcEV1QqbB5wodeP4aS5dXfFLzk5cTsiTbi7js0adRKyaYCQTnUXSw_RKRHkIX3GfwmRpt3LX3CGYeU3njQdBef_EMNZq_o-zl_lfAqLFHT_SKV_2XHZ9piUE5X4beCL1PR-sf-kfs6cJdlKgD7-zkQxzxHZFES7GlKE2SSV0rJZhOGpCZtLC4-d6N_qdve5bVt6-noks78O3h4tSMuv_grezzIK3kvV7lsCxf74rVAnktJC9WipXJN4_EC9gISVtbUwT4hxCCnco95L5TlDuy8c7XjP7wcnYs2FgeunP-1C2_OTWN4htM9RAd_V4Xde0J5QfpJ_KA7I3zyHCnqpmwAAAAAHZa2T0A"
+         "value": "1BVtsOKcBuz2uvXSBqIE6FsLj-qGfqV-iHEHdVQxJAus1nWmxnpXzj7X14Vyp6V7UweWKmK6AZbo5HmCTiJik_qJ8vtuvJE6S_iniOimAKhVcBZ0LLOLQ_oynzjbXCkmB5WN_-5cuS9epeDuo9Twk9qGL7ePDbvLs7m0d1uyeVEQtNbrhgPyjCQR86QwnBZNjbTTKul3XuEii9mzXGVVoceLMjvMjqdJqFzqKH_D6kvAbxNko_6ISZBnEILp-rUitsOWuvcAvhh9NXlUxMucoOcIMPLQMn1mlEeuHYpmjdbsWROeAT1z8CjZFJAUa-JHFKSEu9uIUPlD2d0GPbRdPOErIyQ0P4PU="
      },
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -76,7 +76,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "wesupport004"
+         "value": "FutureCity005"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
