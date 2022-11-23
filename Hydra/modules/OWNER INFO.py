@@ -16,18 +16,20 @@ async def awake(event):
 • Userlink: [Link](@otazuki_004)
 • Github : [Here](https://Github.com/Otazuki004)
 • Details : [Here](https://telegram.dog/Otazuki_bio)
-• Python Knowledge : 19%
-• Future City : [Here](https://telegram.dog/FutureCity004)
+• Python Knowledge : 1%
+• Telethon Knowledge : 20%
+• Pyrogram Knowledge : 5%
+• Future City : [Here](https://telegram.dog/FutureCity005)
 
 ╘══「 Bot count: 2 」
 
-• SUPPORT : [Here](https://telegram.dog/wesupport004)
+• SUPPORT : [Here](https://telegram.dog/FutureCity005)
 • UPDATES : [Here](https://telegram.dog/Updates004)
 """
 
     BUTTON = [
         [
-            Button.url("۞ 𝙁𝙪𝙩𝙪𝙧𝙚 𝘾𝙞𝙩𝙮 ۞", "https://telegram.dog/FutureCity004"),
+            Button.url("۞ 𝙁𝙪𝙩𝙪𝙧𝙚 𝘾𝙞𝙩𝙮 ۞", "https://telegram.dog/FutureCity005"),
             Button.url(" 🔥 MORE INFO 🔥", "https://telegram.dog/otazuki_bio"),
         ]
     ]
