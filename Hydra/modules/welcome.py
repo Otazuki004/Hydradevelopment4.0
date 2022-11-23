@@ -258,10 +258,10 @@ def new_member(update: Update, context: CallbackContext):
                             [
                                 InlineKeyboardButton(
                                     text="۞ 𝙁𝙪𝙩𝙪𝙧𝙚 𝘾𝙞𝙩𝙮 ۞",
-                                    url=f"https://t.me/FutureCity004",
+                                    url=f"https://t.me/FutureCity005",
                                 ),
                                 InlineKeyboardButton(
-                                    text="Updates🛰️",
+                                    text="Updates",
                                     url="https://t.me/Updates004",
                                 ),
                             ]
