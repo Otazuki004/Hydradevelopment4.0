@@ -22,7 +22,7 @@ A modular telegram Python bot running on python3 with an Sqlalchemy, mongodb dat
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-The Support group can be reached out to at [White Tiger • Support](https://telegram.dog/Tiger_SupportChat) Or [White Tiger Support (Github)](https://github.com/Awesome-Gtash/OrekiRobot/discussions/15), where you can ask for help about [OrekiRobot](https://telegram.dog/OrekiXProRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Future City](https://telegram.dog/FutureCity005), where you can ask for help about [Hydra](https://telegram.dog/Hydra_100_bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 <details>
 	<summary>Deploy Options</summary>
