@@ -1,5 +1,3 @@
-# <p align="left"><a href="https://github.com/Awesome-Gtash/Otazuki004"><img src="https://github-readme-stats.vercel.app/api/pin?username=Otazuki &show_icons=true&theme=dark&hide_border=true&repo=OrekiRobot"></a></p>
-
 # Hydra [ BETA ]
 
 A modular telegram Python bot running on python3 with an Sqlalchemy, mongodb database.
@@ -15,7 +13,7 @@ A modular telegram Python bot running on python3 with an Sqlalchemy, mongodb dat
 - [x] Heroku Deploy
 - [x] Docker/Local Machine
 
-╘═━「 Can be found on telegram as [Prince Oreki](https://telegram.dog/OrekiXProRibot) 」
+╘═━「 Can be found on telegram as [Hydra](https://telegram.dog/Hydra_100_Bot) 」
 
 ### ╔═━「 Creator Info/Credits 」Credit
 + [OTAZUKI](https://github.com/Otazuki004) : OWNER
