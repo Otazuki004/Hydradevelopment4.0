@@ -89,10 +89,10 @@ PM_START_TEXT = """
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Last Update : 22:11:22
-❍ Patch Name : Images Edition
+❍ Last Update : 25:11:22
+❍ Patch Name : Offline Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Next Patch : 2:12:2022
+❍ Next Patch : 12:1:2023
 ❍ Next Patch Name : UB Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
@@ -745,7 +745,7 @@ except BaseException:
 PHOTO = "https://graph.org/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 START_HYDRA = f"""
-────「 Hydra Images Edition 」────
+────「 Hydra Offline Edition 」────
 ʜᴇʟʟᴏ Users!
 ᕼʏᴅʀᴀ Տᴛᴀʀᴛᴇᴅ Տᴜᴄᴄᴇssғᴜʟʟʏ 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
