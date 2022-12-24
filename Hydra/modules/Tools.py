@@ -5,7 +5,6 @@ import re
 import urllib
 import urllib.request
 
-import bs4
 import requests
 from bing_image_downloader import downloader
 from bs4 import BeautifulSoup
