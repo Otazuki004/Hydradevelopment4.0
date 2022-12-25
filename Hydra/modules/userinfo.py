@@ -44,7 +44,7 @@ from Hydra.modules.sql.afk_sql import check_afk_status, is_afk
 from Hydra.modules.sql.global_bans_sql import is_user_gbanned
 from Hydra.modules.sql.users_sql import get_user_num_chats
 
-NEKO_IMG = "https://te.legra.ph/file/6464a36460c6daaea783f.jpg"
+HYDRA_IMG = "https://te.legra.ph/file/ee4fc1bb7a1ef86b6fc41.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -324,7 +324,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
     elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
+        text += "\n\nHydra's Creator: @Otazuki_004."
 
     try:
         user_member = chat.get_member(user.id)
@@ -453,18 +453,18 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            NEKO_IMG,
+            HYDRA_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/WESUPPORT004) | [✦ Updates](https://t.me/Updates004)\n\n"
-            + "\n╘══「 by [𝖡𝖾𝗌𝗍𝗂𝖾𝗌𝖷𝖣](https://t.me/Besties_XD) 」\n",
+            + f"\n\n[✦ Support](https://t.me/FutureCity005) | [✦ Updates](https://t.me/Updates004)\n\n"
+            + "\n╘══「 by [FutureCity](https://t.me/FutureCity005) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Otazuki004/Hydradeployment2.0"
+                            text="Repo", url="github.com/Otazuki004/Hydradeployment4.0"
                         )
                     ]
                 ]
@@ -478,16 +478,16 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/WESUPPORT004) | ✦ [Updates](https://t.me/Updates004)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/FutureCity005) | ✦ [Updates](https://t.me/Updates004)\n\n"
                 )
-                + "╘══「 by [𝖡𝖾𝗌𝗍𝗂𝖾𝗌𝖷𝖣](https://t.me/Besties_XD) 」\n"
+                + "╘══「 by [FutureCity](https://t.me/FutureCity005) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Otazuki004/Hydradeployment2.0"
+                            text="Repo", url="github.com/Otazuki004/Hydradeployment4.0"
                         )
                     ]
                 ]
