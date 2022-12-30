@@ -121,19 +121,19 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        #kukiurl = requests.get(
-           # f"http://api.brainshop.ai/get?bid=170552&key=XXF1O6wgkByaU0O5&uid=[uid]&msg===={Message}"
-        #)
+        kukiurl = requests.get(
+            f"http://api.brainshop.ai/get?bid=170552&key=XXF1O6wgkByaU0O5&uid={user.id}&msg===={Message}"
+        )
         
         
 
-kukiurl = requests.get(f"https://bakufuapi.vercel.app/api/chatbot/cleverbot?name=Hydra&owner=Otazuka&message={Message}")
+
 
 
 
         Kuki = json.loads(kukiurl.text)
-        #kuki = Kuki["cnt"]
-        kuki = Kuki["reply"]
+        kuki = Kuki["cnt"]
+
         sleep(0.3)
         message.reply_text(kuki, timeout=60)
 
