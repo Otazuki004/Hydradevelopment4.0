@@ -124,12 +124,6 @@ def chatbot(update: Update, context: CallbackContext):
         kukiurl = requests.get(
             f"http://api.brainshop.ai/get?bid=170552&key=XXF1O6wgkByaU0O5&uid=[user]&msg={Message}"
         )
-        
-        
-
-
-
-
 
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki["cnt"]
