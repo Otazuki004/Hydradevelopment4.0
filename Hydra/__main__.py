@@ -92,8 +92,8 @@ PM_START_TEXT = """
 ❍ Last Update : 25:11:22
 ❍ Patch Name : Offline Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Next Patch : 12:1:2023
-❍ Next Patch Name : UB Edition
+❍ Next Patch : 12:2:2023
+❍ Next Patch Name : Movies Edition
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
