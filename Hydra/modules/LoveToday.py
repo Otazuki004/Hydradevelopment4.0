@@ -34,7 +34,7 @@ async def awake(event):
 from Hydra import tbot as tbot
 from Hydra.events import register
 
-Moviey = "https://t.me/CSFH005/20"
+Moviey = "https://t.me/CSFH005/24"
 
 
 @register(pattern=("Love Today!"))
@@ -45,7 +45,7 @@ async def awake(event):
 from Hydra import tbot as tbot
 from Hydra.events import register
 
-Movieo = "https://t.me/CSFH005/21"
+Movieo = "https://t.me/CSFH005/25"
 
 
 @register(pattern=("Love Today!"))
@@ -56,7 +56,7 @@ async def awake(event):
 from Hydra import tbot as tbot
 from Hydra.events import register
 
-Moviee = "https://t.me/CSFH005/22"
+Moviee = "https://t.me/CSFH005/26"
 
 
 @register(pattern=("Love Today!"))
