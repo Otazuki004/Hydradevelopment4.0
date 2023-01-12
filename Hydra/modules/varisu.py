@@ -6,7 +6,7 @@ ImG = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
 
 @register(pattern=("Varisu"))
 async def awake(event):
-  NO = f"""
+  NO = """
 🎬 Title : Varisu 
 🗓 Year : 2023
 🔊 Audio : Tamil 
