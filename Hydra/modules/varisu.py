@@ -1,6 +1,24 @@
 from Hydra import tbot as tbot
 from Hydra.events import register
 
+ImG = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
+
+
+@register(pattern=("Varisu"))
+async def awake(event):
+  NO = f"""
+🎬 Title : Varisu 
+🗓 Year : 2023
+🔊 Audio : Tamil 
+💿 Quality : PreDVD
+📥 Upload : @FutureCity005
+"""
+    await tbot.send_file(event.chat_id, ImG, caption=NO)
+
+
+from Hydra import tbot as tbot
+from Hydra.events import register
+
 Movie = "https://t.me/CSFH005/3"
 
 
