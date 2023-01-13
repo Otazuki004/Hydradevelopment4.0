@@ -1,5 +1,5 @@
 {
-      "name": "Hydra Images Edition",
+      "name": "Hydra Music Edition",
       "description": "Hydra the most powerful telegram bot",
       "logo": "https://te.legra.ph/file/18226e0514d54b1bb735a.jpg",
       "keywords": [
@@ -22,7 +22,7 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "5401792933:AAHZ1bGKjEQUrBea701IMlAY7TFeD2bXKDk"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
