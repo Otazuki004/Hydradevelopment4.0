@@ -1,13 +1,13 @@
-from Hydra.events import register
-
-@register(pattern=("~Varisu"))
-async def awake(event):
-  await event.reply("Uploading ⏫")
-
 from Hydra import tbot as tbot
 from Hydra.events import register
 
-ImG = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
+
+@register(pattern=("~Varisu"))
+async def awake(event):
+  await event.reply("Uploading ⏫")
+
+
+ImG = "https://t.me/HydraSsto/65"
 
 
 @register(pattern=("~Varisu"))
@@ -15,45 +15,33 @@ async def awake(event):
     await tbot.send_file(event.chat_id, ImG)
 
 
-from Hydra import tbot as tbot
-from Hydra.events import register
-
-Movie = "https://t.me/HydraSsto/88"
+file1 = "https://t.me/HydraSsto/88"
 
 
 @register(pattern=("~Varisu"))
 async def awake(event):
-    await tbot.send_file(event.chat_id, Movie)
+    await tbot.send_file(event.chat_id, file1)
 
 
-from Hydra import tbot as tbot
-from Hydra.events import register
-
-Moviek = "https://t.me/HydraSsto/87"
+file2 = "https://t.me/HydraSsto/87"
 
 
 @register(pattern=("~Varisu"))
 async def awake(event):
-    await tbot.send_file(event.chat_id, Moviek)
+    await tbot.send_file(event.chat_id, file2)
 
 
-from Hydra import tbot as tbot
-from Hydra.events import register
-
-Moviey = "https://t.me/HydraSsto/86"
+file3 = "https://t.me/HydraSsto/86"
 
 
 @register(pattern=("~Varisu"))
 async def awake(event):
-    await tbot.send_file(event.chat_id, Moviey)
+    await tbot.send_file(event.chat_id, file3)
 
 
-from Hydra import tbot as tbot
-from Hydra.events import register
-
-Movieo = "https://t.me/HydraSsto/85"
+file4 = "https://t.me/HydraSsto/87"
 
 
 @register(pattern=("~Varisu"))
 async def awake(event):
-    await tbot.send_file(event.chat_id, Movieo)
+    await tbot.send_file(event.chat_id, file4)
