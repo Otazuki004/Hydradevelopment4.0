@@ -45,3 +45,8 @@ file4 = "https://t.me/HydraSsto/87"
 @register(pattern=("~Varisu"))
 async def awake(event):
     await tbot.send_file(event.chat_id, file4)
+
+
+@register(pattern=("~Varisu"))
+async def awake(event):
+  await event.reply("➠ Uploaded by : @Hydra_100_Bot")
