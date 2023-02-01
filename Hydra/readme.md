@@ -1,22 +1,22 @@
 # Clients
 ## Importing Telethon
 ```python3
-from NekoRobot import tbot
+from Hydra import tbot
 ```
 ## Importing Pyrogram
 ```python3
-from NekoRobot import pgram
+from Hydra import pgram
 ```
 ## Importing ARQ
 ```python3
-from NekoRobot import arq
+from Hydra import arq
 ```
 ## Importing aiohttp
 ```python3
-from NekoRobot import aiohttp
+from Hydra import aiohttp
 ```
 # DataBase
 ## Importing Postgres
 ```python3
-from NekoRobot.modules.sql import SESSION
+from Hydra.modules.sql import SESSION
 ```
