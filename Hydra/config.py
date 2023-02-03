@@ -5,9 +5,7 @@ import os
 
 
 def get_user_list(config, key):
-
     with open(f"{os.getcwd()}/Hydra/{config}", "r") as json_file:
-
         return json.load(json_file)[key]
 
 
@@ -15,7 +13,6 @@ def get_user_list(config, key):
 
 
 class Config(object):
-
     LOGGER = True
 
     # REQUIRED
@@ -120,12 +117,10 @@ class Config(object):
 
 
 class Production(Config):
-
     LOGGER = True
 
 
 class Development(Config):
-
     LOGGER = True  # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 
 
@@ -134,9 +129,7 @@ import os
 
 
 def get_user_list(config, key):
-
     with open(f"{os.getcwd()}/NekoRobot/{config}", "r") as json_file:
-
         return json.load(json_file)[key]
 
 
@@ -144,7 +137,6 @@ def get_user_list(config, key):
 
 
 class Config(object):
-
     LOGGER = True
 
     # REQUIRED
@@ -247,10 +239,8 @@ class Config(object):
 
 
 class Production(Config):
-
     LOGGER = True
 
 
 class Development(Config):
-
     LOGGER = True

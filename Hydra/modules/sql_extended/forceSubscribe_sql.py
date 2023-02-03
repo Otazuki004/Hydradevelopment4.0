@@ -4,7 +4,6 @@ from Hydra.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
-
     __tablename__ = "forceSubscribe"
 
     chat_id = Column(Numeric, primary_key=True)
@@ -12,7 +11,6 @@ class forceSubscribe(BASE):
     channel = Column(String)
 
     def __init__(self, chat_id, channel):
-
         self.chat_id = chat_id
 
         self.channel = channel
@@ -22,9 +20,7 @@ forceSubscribe.__table__.create(checkfirst=True)
 
 
 def fs_settings(chat_id):
-
     try:
-
         return (
             SESSION.query(forceSubscribe)
             .filter(forceSubscribe.chat_id == chat_id)
@@ -32,24 +28,19 @@ def fs_settings(chat_id):
         )
 
     except:
-
         return None
 
     finally:
-
         SESSION.close()
 
 
 def add_channel(chat_id, channel):
-
     adder = SESSION.query(forceSubscribe).get(chat_id)
 
     if adder:
-
         adder.channel = channel
 
     else:
-
         adder = forceSubscribe(chat_id, channel)
 
     SESSION.add(adder)
@@ -58,11 +49,9 @@ def add_channel(chat_id, channel):
 
 
 def disapprove(chat_id):
-
     rem = SESSION.query(forceSubscribe).get(chat_id)
 
     if rem:
-
         SESSION.delete(rem)
 
         SESSION.commit()

@@ -35,6 +35,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 
 OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
 
+
 # Check if user has admin rights
 async def is_administrator(user_id: int, message):
     admin = False
@@ -58,7 +59,6 @@ async def zombies(event):
     if con != "clean":
         find_zombies = await event.respond("Searching For Zombies...")
         async for user in event.client.iter_participants(event.chat_id):
-
             if user.deleted:
                 del_u += 1
                 await sleep(1)
