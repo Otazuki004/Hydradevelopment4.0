@@ -107,7 +107,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="📓 Help", callback_data="help_back"),
-        InlineKeyboardButton(text="𓆩𝗧ᴏᴏɴ 𝗟ɪɴᴋᴢ𓆪", url="https://telegram.dog/Toon_LinkZ"),
+        InlineKeyboardButton(
+            text="𓆩𝗧ᴏᴏɴ 𝗟ɪɴᴋᴢ𓆪", url="https://telegram.dog/Toon_LinkZ"
+        ),
     ],
     [
         InlineKeyboardButton(
