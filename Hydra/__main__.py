@@ -92,8 +92,8 @@ PM_START_TEXT = """
 ❍ Last Update : 25:11:22
 ❍ Patch Name : Offline Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Next Patch : 12:2:2023
-❍ Next Patch Name : Movies Edition
+❍ Next Patch : 25:2:2023
+❍ Next Patch Name : Music Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
 """
@@ -107,7 +107,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="📓 Help", callback_data="help_back"),
-        InlineKeyboardButton(text="Logs 🌐", url="https://telegram.dog/logs004"),
+        InlineKeyboardButton(text="𓆩𝗧ᴏᴏɴ 𝗟ɪɴᴋᴢ𓆪", url="https://telegram.dog/Toon_LinkZ"),
     ],
     [
         InlineKeyboardButton(
@@ -125,6 +125,10 @@ HELP_STRINGS = """
 ➛ /settings:
    ➛ in PM: will send you your settings for all supported modules.
    ➛ in a group: will redirect you to pm, with all that chat's settings.
+
+   • Join Our Group And Network •
+   ➛ @Toon_LinkZ
+   ➛ @FutureCity005
 """
 
 GROUP_START_IMG = (
@@ -137,7 +141,7 @@ GROUP_START_IMG = (
     "https://te.legra.ph/file/e7b6f77976eace7eb9897.mp4",
 )
 
-DONATE_STRING = """❂ I'm Free for Everyone ❂"""
+DONATE_STRING = """❂ Contact @FutureCity005 ❂"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -597,7 +601,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
                     [
                         InlineKeyboardButton(
                             text="Settings",
-                            url=f"https://telegram.dog/{NEKO_PTB.bot.username}?start=stngs_{chat.id}",
+                            url=f"https://telegram.dog/Hydra_100_Bot?start=stngs_{chat.id}",
                         )
                     ]
                 ]
