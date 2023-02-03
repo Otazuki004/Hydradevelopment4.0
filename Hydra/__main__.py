@@ -127,10 +127,9 @@ HELP_STRINGS = """
 ➛ /settings:
    ➛ in PM: will send you your settings for all supported modules.
    ➛ in a group: will redirect you to pm, with all that chat's settings.
-
-   • Join Our Group And Network •
-   ➛ @Toon_LinkZ
-   ➛ @FutureCity005
+➛ Join •
+@FutureCity005 - Support 
+@Toon_LinkZ - Network 
 """
 
 GROUP_START_IMG = (
