@@ -92,7 +92,7 @@ PM_START_TEXT = """
 ❍ Last Update : 25:11:22
 ❍ Patch Name : Offline Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Next Patch : 25:2:2023
+❍ Next Patch : 30:2:2023
 ❍ Next Patch Name : Music Edition 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
