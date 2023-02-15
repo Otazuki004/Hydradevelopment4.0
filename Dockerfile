@@ -16,4 +16,5 @@ COPY . .
 
 CMD [ "python3", "-m" , "Hydra"]
 
-CMD [ "python3", "-m" , "Hydra"]
+
+
