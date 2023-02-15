@@ -3,4 +3,4 @@ build:
     worker: Dockerfile
 run:
   worker.1: python3 -m Hydra
-  worker.2: python3 -m Hydra1
+
