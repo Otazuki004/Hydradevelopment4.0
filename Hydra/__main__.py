@@ -761,7 +761,7 @@ START_HYDRA = f"""
 ❍ 𝗣ʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ : {pyrover}
 ❍ 𝗧ᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : {tlhver}
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ××
+➛ Try The ʜᴇʟᴘ Button Below To Know My Abilities ×××
 """
 
 START_BUTTON = [
