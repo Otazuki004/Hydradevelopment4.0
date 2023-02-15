@@ -2,4 +2,5 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: python3 -m Hydra
+  worker.1: python3 -m Hydra
+  worker.2: python3 -m Hydra1
